@@ -188,8 +188,8 @@ you type</p>
 <code>private</code> and <code>work</code>) by defining more journals in your <code>jrnl.yaml</code>,
 for example:</p>
 <pre><code class="yaml">journals:
-  default: ~/journal.txt
-  work: ~/work.txt
+  default: ~\journal.txt
+  work: ~\work.txt
 </code></pre>
 
 <p>The <code>default</code> journal gets created the first time you start <code>jrnl</code>
@@ -205,11 +205,11 @@ three entries from <code>~/journal.txt</code> (and so does <code>jrnl default -n
 If your <code>jrnl.yaml</code> looks like this:</p>
 <pre><code class="yaml">encrypt: false
 journals:
-  default: ~/journal.txt
-  work:
-    journal: ~/work.txt
-    encrypt: true
-  food: ~/my_recipes.txt
+default: ~/journal.txt
+work:
+  journal: ~/work.txt
+  encrypt: true
+food: ~/my_recipes.txt
 </code></pre>
 
 <p>Your <code>default</code> and your <code>food</code> journals won't be encrypted, however your
